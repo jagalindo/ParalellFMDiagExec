@@ -187,7 +187,7 @@ public class InconsistentFM {
 	    	
 		    do{
 
-			    System.out.println("Trying Change");
+//			    System.out.println("Trying Change");
 			    
 		    	parseFile2 = new FAMAFeatureModel(parseFile);
 		    	CopyFeatureModel(parseFile2, parseFile);
@@ -208,7 +208,7 @@ public class InconsistentFM {
 		    totalChanges+=resApplyChanges;
 		    parseFile = parseFile2;		   
 		    
-		    System.out.println("Applied Change");
+	//	    System.out.println("Applied Change");
 		    /*
 		    ////////////For each new Change, we can generate new Files!!!
 		    totalMistakes = reviewError(parseFile);
