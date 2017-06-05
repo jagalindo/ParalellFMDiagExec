@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Choco3Reasoner"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/CristianReasoner"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FaMaFeatureModel"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FaMaSDK"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FullChocoReasoner"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FMGeneratorPrevious"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
