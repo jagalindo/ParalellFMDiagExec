@@ -56,9 +56,9 @@ public class InconsistentFM2 {
 	}
 	 	
 	private void writingFiles(File fileEntry, String path2, int explanations) throws Exception{
-    	//File name + AppliedChanges + CrossTree Changes + Multiplicity Changes + Explanations
-		String name = fileEntry.getName().substring(0,fileEntry.getName().length()-5) + explanations;
 
+		//File name + AppliedChanges + CrossTree Changes + Multiplicity Changes + Explanations
+		String name = fileEntry.getName().substring(0,fileEntry.getName().length()-5) + explanations;        
 
 		String OS = System.getProperty("os.name").toLowerCase();
 	    String separator ="";
@@ -71,6 +71,8 @@ public class InconsistentFM2 {
 	    ///Writing new XML file
 	    XMLWriter x = new XMLWriter();
 	    x.writeFile(path2 + separator + name + ".xml", parseFile);
+	    
+	    fileEntry.delete();
 	}
 	
 	private int reviewError(FAMAFeatureModel parseFile){
@@ -88,27 +90,28 @@ public class InconsistentFM2 {
 		Path path1 = Paths.get(pathInput);
 		//String name = path1.getFileName().toString();
 		
-		final File fileEntry = new File(path1.toString());		
+		final File folder = new File(path1.toString());		
 		
-		String path2 = fileEntry.getParent();
-		String extension = fileEntry.getName().substring(fileEntry.getName().length()-3);
-			
-
-		if (extension.toUpperCase().equals("XML")){			    	        	
-			XMLReader reader  = new XMLReader();	
-    		try{
-	    		 parseFile = (FAMAFeatureModel) reader.parseFile(fileEntry.getAbsolutePath());	    				    	    
-		    	 int incons = reviewError(parseFile);
-		    	 
-		    	 writingFiles(fileEntry, path2, incons);
-		    	 
-    		}
-    		catch(Exception ex){
-    			System.out.println(fileEntry + " - " + ex.toString());
-    		}
- 
-    		//////////////
-        }
-
+		for (final File fileEntry : folder.listFiles()) {
+			String extension = fileEntry.getName().substring(fileEntry.getName().length()-3);
+			String path2 = fileEntry.getParent();
+				
+	
+			if (extension.toUpperCase().equals("XML")){			    	        	
+				XMLReader reader  = new XMLReader();	
+	    		try{
+		    		 parseFile = (FAMAFeatureModel) reader.parseFile(fileEntry.getAbsolutePath());	    				    	    
+			    	 int incons = reviewError(parseFile);
+			    	 
+			    	 writingFiles(fileEntry, path2, incons);
+			    	 
+	    		}
+	    		catch(Exception ex){
+	    			System.out.println(fileEntry + " - " + ex.toString());
+	    		}
+	 
+	    		//////////////
+	        }
+		}
 	}
 }

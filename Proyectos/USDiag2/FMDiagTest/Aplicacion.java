@@ -3,8 +3,7 @@ package FMDiagTest;
 public class Aplicacion {
 	public static void main(String[] args) throws Exception {
 		String pathInput = "";
-		String pathOutput = "";
-
+	
 	/*	
 		System.out.println("1. To apply changes on FMs: ");
 		System.out.println("java -jar USDiag.jar Change pathIn pathOut changesNumber [graphViz] [strict] [cleanOut]");
@@ -14,6 +13,7 @@ public class Aplicacion {
 		*/
 //		System.out.println("Args " + args.length);
 		
+		/*
 		if (args.length == 0){
 			System.out.println("You need to add parameters!");
 			System.out.println("1st, you must indicate the model for inconsistencies detection!");
@@ -22,13 +22,17 @@ public class Aplicacion {
 		}
 		
 		else{	
-		 
-			  pathInput = args[0];
-			  pathOutput = args[0];
-			  
-			  InconsistentFM2 model = new InconsistentFM2(pathInput);
-			  model.main();				
-			}    
+		 */
+		  pathInput = ".//ModelsErrorsFinal//Splot//models_out//";
+		  InconsistentFM2 model = new InconsistentFM2(pathInput);
+		  model.main();				
+		  
+		  pathInput = ".//ModelsErrorsFinal//Betty//models_out//";
+		  InconsistentFM2 model2 = new InconsistentFM2(pathInput);
+		  model2.main();				
+		  
+
+	//		}    
 					
 	}     
 }
