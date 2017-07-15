@@ -335,7 +335,6 @@ public class InconsistentFM2 {
 		catch(Exception ex){
 			
 		}
-		
    	    ///Writing Graph
 	    if (this.graph)
  	        graphicGeneration(pathOutputAux2 + name, parseFile);    		

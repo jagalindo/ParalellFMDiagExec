@@ -17,7 +17,7 @@ import es.us.isa.FAMA.errors.Error;
 import es.us.isa.FAMA.models.FAMAfeatureModel.FAMAFeatureModel;
 import es.us.isa.FAMA.models.FAMAfeatureModel.fileformats.XMLReader;
 
-public class reviewFMDiagApplication {
+public class reviewFMRedundancy {
 	private String algorithm;
 	private String pathInput;
 	private static String pathOutput;
@@ -41,13 +41,13 @@ public class reviewFMDiagApplication {
 	static String fileName="";
 	private String EOL = System.getProperty("line.separator");
 	
-	public reviewFMDiagApplication(String algorithm, String pathInput, String pathOutput){
+	public reviewFMRedundancy(String algorithm, String pathInput, String pathOutput){
 		this.algorithm = algorithm;
 		this.pathInput= pathInput;
 		this.pathOutput= pathOutput;
 	}
 	
-	public reviewFMDiagApplication(String algorithm, String pathInput, String pathOutput, int threadsNumber){
+	public reviewFMRedundancy(String algorithm, String pathInput, String pathOutput, int threadsNumber){
 		this.algorithm = algorithm;
 		this.pathInput= pathInput;
 		this.pathOutput= pathOutput;

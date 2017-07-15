@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path=""/>
-	<classpathentry kind="lib" path="/FullChocoReasoner/resources/lib/choco-2.1.0-basic+old.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Choco3Reasoner"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/FAMAAttributedFeatureModel"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/FaMaFeatureModel"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/FaMaSDK"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FaMaAttributedModel"/>
+	<classpathentry kind="lib" path="C:/Users/cvshi/Google Drive/US/Doctorado/FaMA/FullChocoReasoner/resources/lib/choco-2.1.0-basic+old.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

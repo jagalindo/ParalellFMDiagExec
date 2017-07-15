@@ -6,7 +6,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/FaMaFeatureModel"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/FaMaSDK"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/FullChocoReasoner"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/FMGeneratorPrevious"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ChocoReasoner"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/FMGenerator"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

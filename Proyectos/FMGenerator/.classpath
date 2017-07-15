@@ -4,11 +4,11 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/FaMaFeatureModel"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/FaMaSDK"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="/home/cristian/Desktop/eclipse/Betty Libs/lib/BeTTy-1.1.1.jar"/>
-	<classpathentry kind="lib" path="/home/cristian/Desktop/eclipse/Betty Libs/lib/commons-math-2.2.jar"/>
-	<classpathentry kind="lib" path="/home/cristian/Desktop/eclipse/Betty Libs/lib/FaMaAttributedModel-1.0.2.jar"/>
-	<classpathentry kind="lib" path="/home/cristian/Desktop/eclipse/Betty Libs/lib/FaMaFeatureModel-0.9.1.jar"/>
-	<classpathentry kind="lib" path="/home/cristian/Desktop/eclipse/Betty Libs/lib/FaMaSDK-1.1.1.jar"/>
-	<classpathentry kind="lib" path="/home/cristian/Desktop/eclipse/Betty Libs/lib/javacsv.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cvshi/Google Drive/US/Betty-1.1/Betty/lib/BeTTy-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cvshi/Google Drive/US/Betty-1.1/Betty/lib/commons-math-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cvshi/Google Drive/US/Betty-1.1/Betty/lib/FaMaAttributedModel-1.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cvshi/Google Drive/US/Betty-1.1/Betty/lib/FaMaFeatureModel-0.9.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cvshi/Google Drive/US/Betty-1.1/Betty/lib/FaMaSDK-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cvshi/Google Drive/US/Betty-1.1/Betty/lib/javacsv.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
